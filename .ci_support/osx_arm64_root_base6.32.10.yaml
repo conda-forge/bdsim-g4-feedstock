@@ -14,6 +14,8 @@ macos_machine:
 - arm64-apple-darwin20.0.0
 qt_main:
 - '5.15'
+root_base:
+- 6.32.10
 target_platform:
 - osx-arm64
 xerces_c:
