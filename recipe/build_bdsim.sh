@@ -1,15 +1,21 @@
 #!/usr/bin/env bash
 set -eux
 
-tar zxf root_v6.36.00.macos-14.7-x86_64-clang160.tar.gz
-source ./root/bin/thisroot.sh 
+if [[ "$target_platform" == "osx-arm64" ]]; then
+    tar zxf ${SRC_DIR}/source_1/root_v6.36.00.macos-14.7-x86_64-clang160.tar.gz
+fi
 
 mkdir bdsim-build
 cd bdsim-build
 
-cmake $CMAKE_ARGS -DCMAKE_PREFIX_PATH=${PREFIX}/lib/cmake/Geant4/ \
-      -DCMAKE_INSTALL_PREFIX="${PREFIX}" "${SRC_DIR}"
-
+if [[ "$target_platform" == "osx-arm64" ]]; then
+    cmake $CMAKE_ARGS -DCMAKE_PREFIX_PATH=${PREFIX}/lib/cmake/Geant4/ \
+	  -DCMAKE_INSTALL_PREFIX="${PREFIX}" "${SRC_DIR}/source_0" \
+	  -DROOTCINT_EXECUTABLE=./root/bin/rootcint/
+else
+    cmake $CMAKE_ARGS -DCMAKE_PREFIX_PATH=${PREFIX}/lib/cmake/Geant4/ \
+	  -DCMAKE_INSTALL_PREFIX="${PREFIX}" "${SRC_DIR}"
+fi
 
 make "-j${CPU_COUNT}" ${VERBOSE_CM:-}
 make install "-j${CPU_COUNT}"
