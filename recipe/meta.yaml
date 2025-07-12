@@ -26,7 +26,7 @@ requirements:
     - {{ cdt('libselinux') }}  # [linux]
     - {{ cdt('libxdamage') }}  # [linux]
     - {{ cdt('libxxf86vm') }}  # [linux]
-    - {{ cdt('libxext') }}     # [linux]
+    - {{ cdt('libxext') }}  # [linux]
 
   host:
     - clhep
@@ -37,8 +37,8 @@ requirements:
     - libzlib
 
   run:
-    - {{ compiler('c') }} # [macosx]
-    - {{ compiler('cxx') }} # [macosx]    
+    - {{ compiler('c') }}  # [macosx]
+    - {{ compiler('cxx') }}  # [macosx]    
 
 test:
   requires:
