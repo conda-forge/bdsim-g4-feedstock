@@ -27,7 +27,7 @@ requirements:
     - {{ cdt('libxdamage') }}  # [linux]
     - {{ cdt('libxxf86vm') }}  # [linux]
     - {{ cdt('libxext') }}  # [linux]
-
+    - root_base >=6.32.0  # [osx and arm64]
   host:
     - clhep
     - xerces-c
