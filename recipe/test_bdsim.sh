@@ -3,4 +3,4 @@ set -eux
 
 bdsim --help
 
-bdsim --file=drift.gmad --batch --ngenerate=100 
+bdsim --file=${RECIPE_DIR}/drift.gmad --batch --ngenerate=100 
