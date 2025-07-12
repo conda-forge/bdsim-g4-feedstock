@@ -36,6 +36,9 @@ requirements:
     - qt-main 
     - libzlib
 
+  run:
+    - {{ compiler('c') }} # [macosx]
+    - {{ compiler('cxx') }} # [macosx]    
 
 test:
   requires:
