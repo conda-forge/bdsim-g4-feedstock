@@ -29,6 +29,8 @@ requirements:
     - {{ cdt('libxext') }}     # [linux]
 
   host:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - clhep
     - xerces-c
     - root_base >=6.32.0
