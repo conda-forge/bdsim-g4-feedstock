@@ -32,8 +32,8 @@ requirements:
   host:
     - clhep
     - xerces-c
-    - root_base ==6.32.10
-    - geant4 >=11.2.2
+    - root_base ==6.30.04
+    - geant4 >=11.0.0
     - qt-main 
     - libzlib
 
