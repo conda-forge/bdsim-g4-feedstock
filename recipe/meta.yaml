@@ -8,11 +8,11 @@ package:
 source:
   url: https://github.com/bdsim-collaboration/bdsim/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 8923a197c97984e32651f877c35c3f759ca8d20b661aaec200b83dbd72e4d7d9
-
+  
 build:
   skip: True  # [win]
   script: ${RECIPE_DIR}/build_bdsim.sh
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -27,6 +27,7 @@ requirements:
     - {{ cdt('libxdamage') }}  # [linux]
     - {{ cdt('libxxf86vm') }}  # [linux]
     - {{ cdt('libxext') }}  # [linux]
+    - wget
 
   host:
     - clhep
