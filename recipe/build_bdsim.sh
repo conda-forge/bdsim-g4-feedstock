@@ -2,6 +2,7 @@
 set -eux
 
 if [[ "$target_platform" == "osx-arm64" ]]; then
+    ls ${SRC_DIR}
     tar zxf ${SRC_DIR}/source_1/root_v6.36.00.macos-14.7-x86_64-clang160.tar.gz
 fi
 
