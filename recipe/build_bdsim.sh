@@ -12,7 +12,7 @@ cd bdsim-build
 if [[ "$target_platform" == "osx-arm64" ]]; then
     cmake $CMAKE_ARGS -DCMAKE_PREFIX_PATH=${PREFIX}/lib/cmake/Geant4/ \
 	  -DCMAKE_INSTALL_PREFIX="${PREFIX}" "${SRC_DIR}" \
-	  -DROOTCINT_EXECUTABLE=./root/bin/rootcint/
+	  -DROOTCINT_EXECUTABLE=../root/bin/rootcint
 else
     cmake $CMAKE_ARGS -DCMAKE_PREFIX_PATH=${PREFIX}/lib/cmake/Geant4/ \
 	  -DCMAKE_INSTALL_PREFIX="${PREFIX}" "${SRC_DIR}"
