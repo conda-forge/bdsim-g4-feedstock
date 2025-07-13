@@ -2,8 +2,8 @@
 set -eux
 
 if [[ "$target_platform" == "osx-arm64" ]]; then
-    wget https://root.cern/download/root_v6.36.00.macos-14.7-x86_64-clang160.tar.gz
-    tar zxf ./root_v6.36.00.macos-14.7-x86_64-clang160.tar.gz
+    wget https://root.cern/download/root_v6.30.02.macos-13.6-x86_64-clang150.tar.gz
+    tar zxf root_v6.30.02.macos-13.6-x86_64-clang150.tar.gz
 fi
 
 mkdir bdsim-build
