@@ -14,6 +14,13 @@ build:
   script: ${RECIPE_DIR}/build_bdsim.sh
   number: 2
 
+  script: |
+    echo "Creating custom Conda env for root"
+    conda create -y -n myroot
+    source activate myroot 
+    conda install root ==6.34.04
+    which rootcint
+
 requirements:
   build:
     - {{ compiler('cxx') }}
@@ -31,7 +38,7 @@ requirements:
   host:
     - clhep
     - xerces-c
-    - root_base
+    - root_base ==6.34.04
     - geant4 >=11.0.0
     - qt-main 
     - libzlib
