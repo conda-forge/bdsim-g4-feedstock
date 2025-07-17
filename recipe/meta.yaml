@@ -14,13 +14,6 @@ build:
   script: ${RECIPE_DIR}/build_bdsim.sh
   number: 2
 
-  script: |
-    echo "Creating custom Conda env for root"
-    conda create -y -n myroot
-    source activate myroot 
-    conda install root ==6.34.04
-    which rootcint
-
 requirements:
   build:
     - {{ compiler('cxx') }}

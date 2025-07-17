@@ -6,6 +6,14 @@ set -eux
 #    tar zxf root_v6.30.04.macos-13.6-x86_64-clang150.tar.gz
 #fi
 
+echo "Creating custom Conda env for root"
+conda create -y -n myroot
+source activate myroot
+conda install root ==6.34.04
+which rootcint
+
+source $BUILD_PREFIX/etc/conda/activate.d/activate.sh
+
 mkdir bdsim-build
 cd bdsim-build
 
