@@ -1,22 +1,25 @@
 #!/usr/bin/env bash
 set -eux
 
-if [[ "$target_platform" == "osx-arm64" ]]; then
-    wget https://root.cern/download/root_v6.30.04.macos-13.6-x86_64-clang150.tar.gz
-    tar zxf root_v6.30.04.macos-13.6-x86_64-clang150.tar.gz
-fi
+#if [[ "$target_platform" == "osx-arm64" ]]; then
+#    wget https://root.cern/download/root_v6.30.04.macos-13.6-x86_64-clang150.tar.gz
+#    tar zxf root_v6.30.04.macos-13.6-x86_64-clang150.tar.gz
+#fi
 
 mkdir bdsim-build
 cd bdsim-build
 
-if [[ "$target_platform" == "osx-arm64" ]]; then
-    cmake $CMAKE_ARGS -DCMAKE_PREFIX_PATH=${PREFIX}/lib/cmake/Geant4/ \
-	  -DCMAKE_INSTALL_PREFIX="${PREFIX}" "${SRC_DIR}" \
-	  -DROOTCINT_EXECUTABLE=../root/bin/rootcint
-else
-    cmake $CMAKE_ARGS -DCMAKE_PREFIX_PATH=${PREFIX}/lib/cmake/Geant4/ \
-	  -DCMAKE_INSTALL_PREFIX="${PREFIX}" "${SRC_DIR}"
-fi
+cmake $CMAKE_ARGS -DCMAKE_PREFIX_PATH=${PREFIX}/lib/cmake/Geant4/ \
+      -DCMAKE_INSTALL_PREFIX="${PREFIX}" "${SRC_DIR}"
+
+#if [[ "$target_platform" == "osx-arm64" ]]; then
+#    cmake $CMAKE_ARGS -DCMAKE_PREFIX_PATH=${PREFIX}/lib/cmake/Geant4/ \
+#	  -DCMAKE_INSTALL_PREFIX="${PREFIX}" "${SRC_DIR}" \
+#	  -DROOTCINT_EXECUTABLE=../root/bin/rootcint
+#else
+#    cmake $CMAKE_ARGS -DCMAKE_PREFIX_PATH=${PREFIX}/lib/cmake/Geant4/ \
+#	  -DCMAKE_INSTALL_PREFIX="${PREFIX}" "${SRC_DIR}"
+#fi
 
 make "-j${CPU_COUNT}" ${VERBOSE_CM:-}
 make install "-j${CPU_COUNT}"
