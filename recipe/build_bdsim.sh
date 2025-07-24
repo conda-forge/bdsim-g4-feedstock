@@ -2,8 +2,8 @@
 set -eux
 
 if [[ "$target_platform" == "osx-arm64" ]]; then
-    wget https://root.cern/download/root_v6.30.02.macos-13.6-x86_64-clang150.tar.gz
-    tar zxf root_v6.30.02.macos-13.6-x86_64-clang150.tar.gz
+    wget https://github.com/bdsim-collaboration/mac_root/releases/download/v0.0.1/root-macOS-13-v6-34-04.tgz
+    tar zxf root-macOS-13-v6-34-04.tgz
 fi
 
 mkdir bdsim-build
@@ -12,7 +12,7 @@ cd bdsim-build
 if [[ "$target_platform" == "osx-arm64" ]]; then
     cmake $CMAKE_ARGS -DCMAKE_PREFIX_PATH=${PREFIX}/lib/cmake/Geant4/ \
 	  -DCMAKE_INSTALL_PREFIX="${PREFIX}" "${SRC_DIR}" \
-	  -DROOTCINT_EXECUTABLE=../root/bin/rootcint
+	  -DROOTCINT_EXECUTABLE=../root-v6-34-04/bin/rootcint
 else
     cmake $CMAKE_ARGS -DCMAKE_PREFIX_PATH=${PREFIX}/lib/cmake/Geant4/ \
 	  -DCMAKE_INSTALL_PREFIX="${PREFIX}" "${SRC_DIR}"
