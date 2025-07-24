@@ -16,12 +16,12 @@ build:
 
 requirements:
   build:
-    - {{ compiler('cxx') }}
-    - {{ stdlib("c") }}  # [linux]
     - cmake
     - make
     - bison
     - root_base >=6.32.0
+    - {{ compiler('cxx') }} # [linux]
+    - {{ stdlib("c") }}  # [linux]    
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
     - {{ cdt('mesa-dri-drivers') }}  # [linux]
     - {{ cdt('libselinux') }}  # [linux]
