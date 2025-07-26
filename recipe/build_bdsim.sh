@@ -4,6 +4,8 @@ set -eux
 if [[ "$target_platform" == "osx-arm64" ]]; then
     wget https://github.com/bdsim-collaboration/mac_root/releases/download/v0.0.1/root-macOS-13-v6-34-04.tgz
     tar zxf root-macOS-13-v6-34-04.tgz
+    otool -L ./root-v6-34-04/bin/rootcint
+    install_name_tool -add_rpath @executable_path/../lib ./root-v6-34-04/bin/rootcint
 fi
 
 mkdir bdsim-build
