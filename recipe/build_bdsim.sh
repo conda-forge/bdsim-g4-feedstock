@@ -6,6 +6,7 @@ if [[ "$target_platform" == "osx-arm64" ]]; then
     tar zxf root-macOS-13-v6-34-04.tgz
     otool -L ./root-v6-34-04/bin/rootcint
     install_name_tool -add_rpath @executable_path/../lib ./root-v6-34-04/bin/rootcint
+    install_name_tool -change /usr/local/opt/zstd/lib/libzstd.1.dylib @executable_path/../lib/libzstd.1.dylib ./root-v6-34-04/lib/libCling.so
 fi
 
 mkdir bdsim-build
