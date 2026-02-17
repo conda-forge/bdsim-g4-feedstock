@@ -17,4 +17,4 @@ qt_main:
 target_platform:
 - osx-arm64
 xerces_c:
-- '3.2'
+- '3.3'
