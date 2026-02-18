@@ -33,6 +33,7 @@ requirements:
     - geant4 >=11.2.2
     - qt-main
     - libzlib
+
 tests:
   - files:
       recipe:
@@ -51,8 +52,8 @@ about:
     tracking routines are provided for fast accurate tracking in a vacuum.
   license: GPL-3.0-or-later
   license_file: LICENCE.txt
-  homepage: http://bdsim-collaboration.github.io/web
-  repository: https://bdsim-collaboration.github.io/bdsim/sphinx/developer.html
+  homepage: https://bdsim-collaboration.github.io/web
+  repository: https://github.com/bdsim-collaboration/bdsim
   documentation: https://bdsim-collaboration.github.io/bdsim/sphinx/index.html
 
 extra:
