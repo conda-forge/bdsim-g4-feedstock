@@ -16,6 +16,8 @@ docker_image:
 - quay.io/condaforge/linux-anvil-x86_64:alma9
 qt_main:
 - '5.15'
+root_base:
+- 6.38.0
 target_platform:
 - linux-64
 xerces_c:
