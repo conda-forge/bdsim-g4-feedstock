@@ -24,7 +24,6 @@ requirements:
     - cmake
     - make
     - bison
-    - wget
   host:
     - if: linux
       then: libgl-devel
