@@ -34,12 +34,6 @@ requirements:
     - geant4 >=11.2.2
     - qt-main
     - libzlib
-  run:
-    - if: macosx
-      then: ${{ compiler('c') }}
-    - if: macosx
-      then: ${{ compiler('cxx') }}
-
 tests:
   - script:
       - $RECIPE_DIR/test_bdsim.sh
