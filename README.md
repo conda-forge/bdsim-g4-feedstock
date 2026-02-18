@@ -19,7 +19,6 @@ material. BDSIM is capable of simulating a wide variety of accelerator component
 with Geant4 geometry dynamically built based on a text input file. Thick lens accelerator
 tracking routines are provided for fast accurate tracking in a vacuum.
 
-
 Current build status
 ====================
 
