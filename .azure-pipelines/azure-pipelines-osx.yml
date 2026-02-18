@@ -19,11 +19,11 @@ jobs:
       osx_arm64_root_base6.36.8:
         CONFIG: osx_arm64_root_base6.36.8
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15
+        VMIMAGE: macOS-15-arm64
       osx_arm64_root_base6.38.0:
         CONFIG: osx_arm64_root_base6.38.0
         UPLOAD_PACKAGES: 'True'
-        VMIMAGE: macOS-15
+        VMIMAGE: macOS-15-arm64
   timeoutInMinutes: 360
   variables: {}
 
