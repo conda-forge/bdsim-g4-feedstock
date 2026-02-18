@@ -23,42 +23,60 @@ description = "List contents of all packages found in rattler-build build direct
 [tasks.build]
 cmd = "rattler-build build --recipe recipe"
 description = "Build bdsim-g4-feedstock directly (without setup scripts), no particular variant specified"
-[tasks."build-linux_64_root_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_root_base6.36.8.yaml"
-description = "Build bdsim-g4-feedstock with variant linux_64_root_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-linux_64_root_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_root_base6.36.8.yaml"
-description = "List contents of bdsim-g4-feedstock packages built for variant linux_64_root_base6.36.8"
-[tasks."build-linux_64_root_base6.38.0"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_root_base6.38.0.yaml"
-description = "Build bdsim-g4-feedstock with variant linux_64_root_base6.38.0 directly (without setup scripts)"
-[tasks."inspect-linux_64_root_base6.38.0"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_root_base6.38.0.yaml"
-description = "List contents of bdsim-g4-feedstock packages built for variant linux_64_root_base6.38.0"
-[tasks."build-osx_64_root_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_root_base6.36.8.yaml"
-description = "Build bdsim-g4-feedstock with variant osx_64_root_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-osx_64_root_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_root_base6.36.8.yaml"
-description = "List contents of bdsim-g4-feedstock packages built for variant osx_64_root_base6.36.8"
-[tasks."build-osx_64_root_base6.38.0"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_root_base6.38.0.yaml"
-description = "Build bdsim-g4-feedstock with variant osx_64_root_base6.38.0 directly (without setup scripts)"
-[tasks."inspect-osx_64_root_base6.38.0"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_root_base6.38.0.yaml"
-description = "List contents of bdsim-g4-feedstock packages built for variant osx_64_root_base6.38.0"
-[tasks."build-osx_arm64_root_base6.36.8"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_root_base6.36.8.yaml"
-description = "Build bdsim-g4-feedstock with variant osx_arm64_root_base6.36.8 directly (without setup scripts)"
-[tasks."inspect-osx_arm64_root_base6.36.8"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_root_base6.36.8.yaml"
-description = "List contents of bdsim-g4-feedstock packages built for variant osx_arm64_root_base6.36.8"
-[tasks."build-osx_arm64_root_base6.38.0"]
-cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_root_base6.38.0.yaml"
-description = "Build bdsim-g4-feedstock with variant osx_arm64_root_base6.38.0 directly (without setup scripts)"
-[tasks."inspect-osx_arm64_root_base6.38.0"]
-cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_root_base6.38.0.yaml"
-description = "List contents of bdsim-g4-feedstock packages built for variant osx_arm64_root_base6.38.0"
+[tasks."build-linux_64_root_base6.36.8root_cxx_standard20"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_root_base6.36.8root_cxx_standard20.yaml"
+description = "Build bdsim-g4-feedstock with variant linux_64_root_base6.36.8root_cxx_standard20 directly (without setup scripts)"
+[tasks."inspect-linux_64_root_base6.36.8root_cxx_standard20"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_root_base6.36.8root_cxx_standard20.yaml"
+description = "List contents of bdsim-g4-feedstock packages built for variant linux_64_root_base6.36.8root_cxx_standard20"
+[tasks."build-linux_64_root_base6.38.0root_cxx_standard20"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_root_base6.38.0root_cxx_standard20.yaml"
+description = "Build bdsim-g4-feedstock with variant linux_64_root_base6.38.0root_cxx_standard20 directly (without setup scripts)"
+[tasks."inspect-linux_64_root_base6.38.0root_cxx_standard20"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_root_base6.38.0root_cxx_standard20.yaml"
+description = "List contents of bdsim-g4-feedstock packages built for variant linux_64_root_base6.38.0root_cxx_standard20"
+[tasks."build-linux_64_root_base6.38.0root_cxx_standard23"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_root_base6.38.0root_cxx_standard23.yaml"
+description = "Build bdsim-g4-feedstock with variant linux_64_root_base6.38.0root_cxx_standard23 directly (without setup scripts)"
+[tasks."inspect-linux_64_root_base6.38.0root_cxx_standard23"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_root_base6.38.0root_cxx_standard23.yaml"
+description = "List contents of bdsim-g4-feedstock packages built for variant linux_64_root_base6.38.0root_cxx_standard23"
+[tasks."build-osx_64_root_base6.36.8root_cxx_standard20"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_root_base6.36.8root_cxx_standard20.yaml"
+description = "Build bdsim-g4-feedstock with variant osx_64_root_base6.36.8root_cxx_standard20 directly (without setup scripts)"
+[tasks."inspect-osx_64_root_base6.36.8root_cxx_standard20"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_root_base6.36.8root_cxx_standard20.yaml"
+description = "List contents of bdsim-g4-feedstock packages built for variant osx_64_root_base6.36.8root_cxx_standard20"
+[tasks."build-osx_64_root_base6.38.0root_cxx_standard20"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_root_base6.38.0root_cxx_standard20.yaml"
+description = "Build bdsim-g4-feedstock with variant osx_64_root_base6.38.0root_cxx_standard20 directly (without setup scripts)"
+[tasks."inspect-osx_64_root_base6.38.0root_cxx_standard20"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_root_base6.38.0root_cxx_standard20.yaml"
+description = "List contents of bdsim-g4-feedstock packages built for variant osx_64_root_base6.38.0root_cxx_standard20"
+[tasks."build-osx_64_root_base6.38.0root_cxx_standard23"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_root_base6.38.0root_cxx_standard23.yaml"
+description = "Build bdsim-g4-feedstock with variant osx_64_root_base6.38.0root_cxx_standard23 directly (without setup scripts)"
+[tasks."inspect-osx_64_root_base6.38.0root_cxx_standard23"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_root_base6.38.0root_cxx_standard23.yaml"
+description = "List contents of bdsim-g4-feedstock packages built for variant osx_64_root_base6.38.0root_cxx_standard23"
+[tasks."build-osx_arm64_root_base6.36.8root_cxx_standard20"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_root_base6.36.8root_cxx_standard20.yaml"
+description = "Build bdsim-g4-feedstock with variant osx_arm64_root_base6.36.8root_cxx_standard20 directly (without setup scripts)"
+[tasks."inspect-osx_arm64_root_base6.36.8root_cxx_standard20"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_root_base6.36.8root_cxx_standard20.yaml"
+description = "List contents of bdsim-g4-feedstock packages built for variant osx_arm64_root_base6.36.8root_cxx_standard20"
+[tasks."build-osx_arm64_root_base6.38.0root_cxx_standard20"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_root_base6.38.0root_cxx_standard20.yaml"
+description = "Build bdsim-g4-feedstock with variant osx_arm64_root_base6.38.0root_cxx_standard20 directly (without setup scripts)"
+[tasks."inspect-osx_arm64_root_base6.38.0root_cxx_standard20"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_root_base6.38.0root_cxx_standard20.yaml"
+description = "List contents of bdsim-g4-feedstock packages built for variant osx_arm64_root_base6.38.0root_cxx_standard20"
+[tasks."build-osx_arm64_root_base6.38.0root_cxx_standard23"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_root_base6.38.0root_cxx_standard23.yaml"
+description = "Build bdsim-g4-feedstock with variant osx_arm64_root_base6.38.0root_cxx_standard23 directly (without setup scripts)"
+[tasks."inspect-osx_arm64_root_base6.38.0root_cxx_standard23"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_root_base6.38.0root_cxx_standard23.yaml"
+description = "List contents of bdsim-g4-feedstock packages built for variant osx_arm64_root_base6.38.0root_cxx_standard23"
 
 [feature.smithy.dependencies]
 conda-smithy = "*"

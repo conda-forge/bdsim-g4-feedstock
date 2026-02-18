@@ -3,13 +3,13 @@ About bdsim-g4-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bdsim-g4-feedstock/blob/main/LICENSE.txt)
 
-Home: http://bdsim-collaboration.github.io/web
+Home: https://bdsim-collaboration.github.io/web
 
 Package license: GPL-3.0-or-later
 
 Summary: BDSIM is a code to make 3D models of particle accelerators using Geant4.
 
-Development: https://bdsim-collaboration.github.io/bdsim/sphinx/developer.html
+Development: https://github.com/bdsim-collaboration/bdsim
 
 Documentation: https://bdsim-collaboration.github.io/bdsim/sphinx/index.html
 
@@ -37,45 +37,66 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_root_base6.36.8</td>
+              <td>linux_64_root_base6.36.8root_cxx_standard20</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26154&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bdsim-g4-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_root_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bdsim-g4-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_root_base6.36.8root_cxx_standard20" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>linux_64_root_base6.38.0</td>
+              <td>linux_64_root_base6.38.0root_cxx_standard20</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26154&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bdsim-g4-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_root_base6.38.0" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bdsim-g4-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_root_base6.38.0root_cxx_standard20" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_root_base6.36.8</td>
+              <td>linux_64_root_base6.38.0root_cxx_standard23</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26154&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bdsim-g4-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_root_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bdsim-g4-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_root_base6.38.0root_cxx_standard23" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_root_base6.38.0</td>
+              <td>osx_64_root_base6.36.8root_cxx_standard20</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26154&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bdsim-g4-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_root_base6.38.0" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bdsim-g4-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_root_base6.36.8root_cxx_standard20" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_root_base6.36.8</td>
+              <td>osx_64_root_base6.38.0root_cxx_standard20</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26154&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bdsim-g4-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_root_base6.36.8" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bdsim-g4-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_root_base6.38.0root_cxx_standard20" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_arm64_root_base6.38.0</td>
+              <td>osx_64_root_base6.38.0root_cxx_standard23</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26154&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bdsim-g4-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_root_base6.38.0" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bdsim-g4-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_root_base6.38.0root_cxx_standard23" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_root_base6.36.8root_cxx_standard20</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26154&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bdsim-g4-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_root_base6.36.8root_cxx_standard20" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_root_base6.38.0root_cxx_standard20</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26154&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bdsim-g4-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_root_base6.38.0root_cxx_standard20" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_root_base6.38.0root_cxx_standard23</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=26154&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/bdsim-g4-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_root_base6.38.0root_cxx_standard23" alt="variant">
                 </a>
               </td>
             </tr>

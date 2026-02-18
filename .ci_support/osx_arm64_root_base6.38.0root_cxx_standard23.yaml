@@ -15,12 +15,17 @@ cxx_compiler:
 cxx_compiler_version:
 - '19'
 macos_machine:
-- x86_64-apple-darwin13.4.0
+- arm64-apple-darwin20.0.0
 qt_main:
 - '5.15'
 root_base:
 - 6.38.0
+root_cxx_standard:
+- '23'
 target_platform:
-- osx-64
+- osx-arm64
 xerces_c:
 - '3.3'
+zip_keys:
+- - root_base
+  - root_cxx_standard
