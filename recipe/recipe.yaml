@@ -30,6 +30,7 @@ requirements:
     - clhep
     - xerces-c
     - root_base
+    - root_cxx_standard
     - geant4 >=11.2.2
     - qt-main
     - libzlib
