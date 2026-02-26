@@ -1,0 +1,62 @@
+schema_version: 1
+
+context:
+  name: bdsim-g4
+  version: 1.7.7
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/bdsim-collaboration/bdsim/archive/refs/tags/v${{ version }}.tar.gz
+  sha256: 8923a197c97984e32651f877c35c3f759ca8d20b661aaec200b83dbd72e4d7d9
+
+build:
+  number: 4
+  skip: win
+  script: ${RECIPE_DIR}/build_bdsim.sh
+
+requirements:
+  build:
+    - ${{ compiler('cxx') }}
+    - ${{ stdlib("c") }}
+    - cmake
+    - make
+    - bison
+  host:
+    - if: linux
+      then: libgl-devel
+    - clhep
+    - xerces-c
+    - root_base
+    - root_cxx_standard
+    - geant4 >=11.2.2
+    - qt-main
+    - libzlib
+
+tests:
+  - files:
+      recipe:
+        - drift.gmad
+    script:
+      - bdsim --help
+      - bdsim --file=drift.gmad --batch --ngenerate=100
+
+about:
+  summary: BDSIM is a code to make 3D models of particle accelerators using Geant4.
+  description: |
+    Beam Delivery Simulation (BDSIM) is a C++ program that utilises the Geant4 toolkit to simulate
+    both the transport of particles in an accelerator and their interaction with the accelerator
+    material. BDSIM is capable of simulating a wide variety of accelerator components and magnets
+    with Geant4 geometry dynamically built based on a text input file. Thick lens accelerator
+    tracking routines are provided for fast accurate tracking in a vacuum.
+  license: GPL-3.0-or-later
+  license_file: LICENCE.txt
+  homepage: https://bdsim-collaboration.github.io/web
+  repository: https://github.com/bdsim-collaboration/bdsim
+  documentation: https://bdsim-collaboration.github.io/bdsim/sphinx/index.html
+
+extra:
+  recipe-maintainers:
+    - stewartboogert
