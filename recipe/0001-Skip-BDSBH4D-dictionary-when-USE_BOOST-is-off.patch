@@ -1,0 +1,41 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Chris Burr <chrisburr73@gmail.com>
+Date: Mon, 9 Jun 2026 00:00:00 +0000
+Subject: [PATCH] Skip BDSBH4D dictionary when USE_BOOST is off
+
+The BDSBH4D dictionary only carries Boost-based 4D-histogram classes and
+its LinkDef (include/BDSBH4DLinkDef.hh) is entirely wrapped in
+`#ifdef USE_BOOST`. When BDSIM is configured without Boost the LinkDef
+preprocesses to an empty selection file, which older ROOT tolerated but
+ROOT >= 6.40 rejects with:
+
+    Error: No selection rules specified and creation of C++ module not
+    requested: did you forget to specify a selection file ...
+
+Skip generating that dictionary when Boost support is off. All BDSBH4D
+usage elsewhere is already guarded by `#ifdef USE_BOOST`, so this is
+consistent with the rest of the no-Boost build.
+---
+ cmake/ROOT.cmake | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/cmake/ROOT.cmake b/cmake/ROOT.cmake
+index 0000000..1111111 100644
+--- a/cmake/ROOT.cmake
++++ b/cmake/ROOT.cmake
+@@ -10,6 +10,13 @@ file(MAKE_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/root)
+ file(GLOB linkHeaders ${CMAKE_CURRENT_SOURCE_DIR}/include/*LinkDef.hh)
+ # for loop over link definitions
+ foreach(header ${linkHeaders})
++  # The BDSBH4D dictionary only carries Boost-based 4D-histogram classes; its
++  # LinkDef is entirely #ifdef USE_BOOST. Without Boost it preprocesses to an
++  # empty selection file, which ROOT >= 6.40 rejects ("No selection rules
++  # specified"). Skip generating it when Boost support is off.
++  if(NOT USE_BOOST AND header MATCHES "BDSBH4DLinkDef")
++    continue()
++  endif()
+   # remove LinkDef.hh
+   string(FIND ${header} "LinkDef.hh" pos REVERSE)
+   string(FIND ${header} "/" dir REVERSE)
+--
+2.40.0
