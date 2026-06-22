@@ -13,7 +13,7 @@ source:
   sha256: 8923a197c97984e32651f877c35c3f759ca8d20b661aaec200b83dbd72e4d7d9
 
 build:
-  number: 4
+  number: 5
   skip: win
   script: ${RECIPE_DIR}/build_bdsim.sh
 
