@@ -19,9 +19,9 @@ macos_machine:
 qt_main:
 - '5.15'
 root_base:
-- 6.38.0
+- 6.40.0
 root_cxx_standard:
-- '23'
+- '20'
 target_platform:
 - osx-64
 xerces_c:
