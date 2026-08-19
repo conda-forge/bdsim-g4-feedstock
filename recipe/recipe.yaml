@@ -15,7 +15,7 @@ source:
     - 0001-Skip-BDSBH4D-dictionary-when-USE_BOOST-is-off.patch
 
 build:
-  number: 6
+  number: 7
   skip: win
   script: ${RECIPE_DIR}/build_bdsim.sh
 
@@ -36,6 +36,7 @@ requirements:
     - geant4 >=11.2.2
     - qt-main
     - libzlib
+    - hepmc3
 
 tests:
   - files:
