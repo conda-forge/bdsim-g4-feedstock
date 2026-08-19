@@ -37,6 +37,9 @@ requirements:
     - qt-main
     - libzlib
     - hepmc3
+    - python
+    - pybind11
+    - pybind11-abi
 
 tests:
   - files:
