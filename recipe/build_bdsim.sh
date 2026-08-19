@@ -6,6 +6,7 @@ cd bdsim-build
 
 cmake $CMAKE_ARGS -DCMAKE_PREFIX_PATH=${PREFIX}/lib/cmake/Geant4/ \
       -DUSE_HEPMC3=ON \
+      -DUSE_PLASMA_HDF5=ON \
       "${SRC_DIR}"
 
 make "-j${CPU_COUNT}" ${VERBOSE_CM:-}

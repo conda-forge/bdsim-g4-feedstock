@@ -15,7 +15,7 @@ source:
     - 0001-Skip-BDSBH4D-dictionary-when-USE_BOOST-is-off.patch
 
 build:
-  number: 7
+  number: 8
   skip: win
   script: ${RECIPE_DIR}/build_bdsim.sh
 
