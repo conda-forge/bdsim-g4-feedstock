@@ -12,6 +12,16 @@ cxx_compiler_version:
 - '15'
 docker_image:
 - quay.io/condaforge/linux-anvil-x86_64:alma10
+hepmc3:
+- '3.3'
+pin_run_as_build:
+  python:
+    min_pin: x.x
+    max_pin: x.x
+pybind11_abi:
+- '4'
+python:
+- 3.13.* *_cp313
 qt_main:
 - '5.15'
 root_base:

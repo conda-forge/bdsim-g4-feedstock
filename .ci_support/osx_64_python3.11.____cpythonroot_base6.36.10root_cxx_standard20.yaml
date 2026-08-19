@@ -14,14 +14,24 @@ cxx_compiler:
 - clangxx
 cxx_compiler_version:
 - '21'
+hepmc3:
+- '3.3'
 macos_machine:
 - x86_64-apple-darwin13.4.0
+pin_run_as_build:
+  python:
+    min_pin: x.x
+    max_pin: x.x
+pybind11_abi:
+- '4'
+python:
+- 3.11.* *_cpython
 qt_main:
 - '5.15'
 root_base:
-- 6.40.2
+- 6.36.10
 root_cxx_standard:
-- '23'
+- '20'
 target_platform:
 - osx-64
 xerces_c:
