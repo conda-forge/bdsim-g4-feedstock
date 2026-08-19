@@ -7,6 +7,7 @@ cd bdsim-build
 cmake $CMAKE_ARGS -DCMAKE_PREFIX_PATH=${PREFIX}/lib/cmake/Geant4/ \
       -DUSE_HEPMC3=ON \
       -DUSE_PLASMA_HDF5=ON \
+      -DUSE_PYTHON_BINDINGS=ON \
       -DPYTHON_EXECUTABLE=${PYTHON} \
       -DCMAKE_INSTALL_PREFIX=${PREFIX} \
       "${SRC_DIR}"
