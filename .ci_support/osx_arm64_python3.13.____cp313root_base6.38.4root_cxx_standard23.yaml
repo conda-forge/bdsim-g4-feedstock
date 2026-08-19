@@ -17,15 +17,23 @@ cxx_compiler_version:
 hepmc3:
 - '3.3'
 macos_machine:
-- x86_64-apple-darwin13.4.0
+- arm64-apple-darwin20.0.0
+pin_run_as_build:
+  python:
+    min_pin: x.x
+    max_pin: x.x
+pybind11_abi:
+- '4'
+python:
+- 3.13.* *_cp313
 qt_main:
 - '5.15'
 root_base:
-- 6.36.10
+- 6.38.4
 root_cxx_standard:
-- '20'
+- '23'
 target_platform:
-- osx-64
+- osx-arm64
 xerces_c:
 - '3.3'
 zip_keys:
