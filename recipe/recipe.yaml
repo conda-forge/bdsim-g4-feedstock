@@ -40,7 +40,8 @@ requirements:
     - python
     - pybind11
     - pybind11-abi
-
+  run:
+    - python
 tests:
   - files:
       recipe:
