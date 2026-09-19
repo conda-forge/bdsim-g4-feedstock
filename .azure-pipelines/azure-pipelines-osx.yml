@@ -8,8 +8,8 @@ jobs:
     vmImage: $(VMIMAGE)
   strategy:
     matrix:
-      osx_64_python3.10.____cpythonroot_base6.36.10root_cxx_standard20:
-        CONFIG: osx_64_python3.10.____cpythonroot_base6.36.10root_cxx_standard20
+      osx_64_clhep2.4.4.0python3.11.____cpythonroot_base6.36.14root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.4.0python3.11.____cpythonroot_base6.36.14root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -18,8 +18,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.10.____cpythonroot_base6.38.4root_cxx_standard20:
-        CONFIG: osx_64_python3.10.____cpythonroot_base6.38.4root_cxx_standard20
+      osx_64_clhep2.4.4.0python3.11.____cpythonroot_base6.38.6root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.4.0python3.11.____cpythonroot_base6.38.6root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -28,8 +28,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.10.____cpythonroot_base6.38.4root_cxx_standard23:
-        CONFIG: osx_64_python3.10.____cpythonroot_base6.38.4root_cxx_standard23
+      osx_64_clhep2.4.4.0python3.11.____cpythonroot_base6.38.6root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.4.0python3.11.____cpythonroot_base6.38.6root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -38,8 +38,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.10.____cpythonroot_base6.40.2root_cxx_standard20:
-        CONFIG: osx_64_python3.10.____cpythonroot_base6.40.2root_cxx_standard20
+      osx_64_clhep2.4.4.0python3.11.____cpythonroot_base6.40.4root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.4.0python3.11.____cpythonroot_base6.40.4root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -48,8 +48,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.10.____cpythonroot_base6.40.2root_cxx_standard23:
-        CONFIG: osx_64_python3.10.____cpythonroot_base6.40.2root_cxx_standard23
+      osx_64_clhep2.4.4.0python3.11.____cpythonroot_base6.40.4root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.4.0python3.11.____cpythonroot_base6.40.4root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -58,8 +58,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.11.____cpythonroot_base6.36.10root_cxx_standard20:
-        CONFIG: osx_64_python3.11.____cpythonroot_base6.36.10root_cxx_standard20
+      osx_64_clhep2.4.4.0python3.12.____cpythonroot_base6.36.14root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.4.0python3.12.____cpythonroot_base6.36.14root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -68,8 +68,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.11.____cpythonroot_base6.38.4root_cxx_standard20:
-        CONFIG: osx_64_python3.11.____cpythonroot_base6.38.4root_cxx_standard20
+      osx_64_clhep2.4.4.0python3.12.____cpythonroot_base6.38.6root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.4.0python3.12.____cpythonroot_base6.38.6root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -78,8 +78,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.11.____cpythonroot_base6.38.4root_cxx_standard23:
-        CONFIG: osx_64_python3.11.____cpythonroot_base6.38.4root_cxx_standard23
+      osx_64_clhep2.4.4.0python3.12.____cpythonroot_base6.38.6root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.4.0python3.12.____cpythonroot_base6.38.6root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -88,8 +88,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.11.____cpythonroot_base6.40.2root_cxx_standard20:
-        CONFIG: osx_64_python3.11.____cpythonroot_base6.40.2root_cxx_standard20
+      osx_64_clhep2.4.4.0python3.12.____cpythonroot_base6.40.4root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.4.0python3.12.____cpythonroot_base6.40.4root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -98,8 +98,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.11.____cpythonroot_base6.40.2root_cxx_standard23:
-        CONFIG: osx_64_python3.11.____cpythonroot_base6.40.2root_cxx_standard23
+      osx_64_clhep2.4.4.0python3.12.____cpythonroot_base6.40.4root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.4.0python3.12.____cpythonroot_base6.40.4root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -108,8 +108,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.12.____cpythonroot_base6.36.10root_cxx_standard20:
-        CONFIG: osx_64_python3.12.____cpythonroot_base6.36.10root_cxx_standard20
+      osx_64_clhep2.4.4.0python3.13.____cp313root_base6.36.14root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.4.0python3.13.____cp313root_base6.36.14root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -118,8 +118,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.12.____cpythonroot_base6.38.4root_cxx_standard20:
-        CONFIG: osx_64_python3.12.____cpythonroot_base6.38.4root_cxx_standard20
+      osx_64_clhep2.4.4.0python3.13.____cp313root_base6.38.6root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.4.0python3.13.____cp313root_base6.38.6root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -128,8 +128,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.12.____cpythonroot_base6.38.4root_cxx_standard23:
-        CONFIG: osx_64_python3.12.____cpythonroot_base6.38.4root_cxx_standard23
+      osx_64_clhep2.4.4.0python3.13.____cp313root_base6.38.6root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.4.0python3.13.____cp313root_base6.38.6root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -138,8 +138,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.12.____cpythonroot_base6.40.2root_cxx_standard20:
-        CONFIG: osx_64_python3.12.____cpythonroot_base6.40.2root_cxx_standard20
+      osx_64_clhep2.4.4.0python3.13.____cp313root_base6.40.4root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.4.0python3.13.____cp313root_base6.40.4root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -148,8 +148,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.12.____cpythonroot_base6.40.2root_cxx_standard23:
-        CONFIG: osx_64_python3.12.____cpythonroot_base6.40.2root_cxx_standard23
+      osx_64_clhep2.4.4.0python3.13.____cp313root_base6.40.4root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.4.0python3.13.____cp313root_base6.40.4root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -158,8 +158,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.13.____cp313root_base6.36.10root_cxx_standard20:
-        CONFIG: osx_64_python3.13.____cp313root_base6.36.10root_cxx_standard20
+      osx_64_clhep2.4.4.0python3.14.____cp314root_base6.36.14root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.4.0python3.14.____cp314root_base6.36.14root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -168,8 +168,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.13.____cp313root_base6.38.4root_cxx_standard20:
-        CONFIG: osx_64_python3.13.____cp313root_base6.38.4root_cxx_standard20
+      osx_64_clhep2.4.4.0python3.14.____cp314root_base6.38.6root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.4.0python3.14.____cp314root_base6.38.6root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -178,8 +178,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.13.____cp313root_base6.38.4root_cxx_standard23:
-        CONFIG: osx_64_python3.13.____cp313root_base6.38.4root_cxx_standard23
+      osx_64_clhep2.4.4.0python3.14.____cp314root_base6.38.6root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.4.0python3.14.____cp314root_base6.38.6root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -188,8 +188,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.13.____cp313root_base6.40.2root_cxx_standard20:
-        CONFIG: osx_64_python3.13.____cp313root_base6.40.2root_cxx_standard20
+      osx_64_clhep2.4.4.0python3.14.____cp314root_base6.40.4root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.4.0python3.14.____cp314root_base6.40.4root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -198,8 +198,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.13.____cp313root_base6.40.2root_cxx_standard23:
-        CONFIG: osx_64_python3.13.____cp313root_base6.40.2root_cxx_standard23
+      osx_64_clhep2.4.4.0python3.14.____cp314root_base6.40.4root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.4.0python3.14.____cp314root_base6.40.4root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -208,8 +208,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.14.____cp314root_base6.36.10root_cxx_standard20:
-        CONFIG: osx_64_python3.14.____cp314root_base6.36.10root_cxx_standard20
+      osx_64_clhep2.4.7.1python3.11.____cpythonroot_base6.36.14root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.1python3.11.____cpythonroot_base6.36.14root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -218,8 +218,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.14.____cp314root_base6.38.4root_cxx_standard20:
-        CONFIG: osx_64_python3.14.____cp314root_base6.38.4root_cxx_standard20
+      osx_64_clhep2.4.7.1python3.11.____cpythonroot_base6.38.6root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.1python3.11.____cpythonroot_base6.38.6root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -228,8 +228,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.14.____cp314root_base6.38.4root_cxx_standard23:
-        CONFIG: osx_64_python3.14.____cp314root_base6.38.4root_cxx_standard23
+      osx_64_clhep2.4.7.1python3.11.____cpythonroot_base6.38.6root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.7.1python3.11.____cpythonroot_base6.38.6root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -238,8 +238,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.14.____cp314root_base6.40.2root_cxx_standard20:
-        CONFIG: osx_64_python3.14.____cp314root_base6.40.2root_cxx_standard20
+      osx_64_clhep2.4.7.1python3.11.____cpythonroot_base6.40.4root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.1python3.11.____cpythonroot_base6.40.4root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -248,8 +248,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_64_python3.14.____cp314root_base6.40.2root_cxx_standard23:
-        CONFIG: osx_64_python3.14.____cp314root_base6.40.2root_cxx_standard23
+      osx_64_clhep2.4.7.1python3.11.____cpythonroot_base6.40.4root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.7.1python3.11.____cpythonroot_base6.40.4root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -258,8 +258,358 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.10.____cpythonroot_base6.36.10root_cxx_standard20:
-        CONFIG: osx_arm64_python3.10.____cpythonroot_base6.36.10root_cxx_standard20
+      osx_64_clhep2.4.7.1python3.12.____cpythonroot_base6.36.14root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.1python3.12.____cpythonroot_base6.36.14root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.1python3.12.____cpythonroot_base6.38.6root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.1python3.12.____cpythonroot_base6.38.6root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.1python3.12.____cpythonroot_base6.38.6root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.7.1python3.12.____cpythonroot_base6.38.6root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.1python3.12.____cpythonroot_base6.40.4root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.1python3.12.____cpythonroot_base6.40.4root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.1python3.12.____cpythonroot_base6.40.4root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.7.1python3.12.____cpythonroot_base6.40.4root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.1python3.13.____cp313root_base6.36.14root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.1python3.13.____cp313root_base6.36.14root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.1python3.13.____cp313root_base6.38.6root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.1python3.13.____cp313root_base6.38.6root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.1python3.13.____cp313root_base6.38.6root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.7.1python3.13.____cp313root_base6.38.6root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.1python3.13.____cp313root_base6.40.4root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.1python3.13.____cp313root_base6.40.4root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.1python3.13.____cp313root_base6.40.4root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.7.1python3.13.____cp313root_base6.40.4root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.1python3.14.____cp314root_base6.36.14root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.1python3.14.____cp314root_base6.36.14root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.1python3.14.____cp314root_base6.38.6root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.1python3.14.____cp314root_base6.38.6root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.1python3.14.____cp314root_base6.38.6root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.7.1python3.14.____cp314root_base6.38.6root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.1python3.14.____cp314root_base6.40.4root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.1python3.14.____cp314root_base6.40.4root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.1python3.14.____cp314root_base6.40.4root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.7.1python3.14.____cp314root_base6.40.4root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.11.____cpythonroot_base6.36.14root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.2python3.11.____cpythonroot_base6.36.14root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.11.____cpythonroot_base6.38.6root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.2python3.11.____cpythonroot_base6.38.6root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.11.____cpythonroot_base6.38.6root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.7.2python3.11.____cpythonroot_base6.38.6root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.11.____cpythonroot_base6.40.4root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.2python3.11.____cpythonroot_base6.40.4root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.11.____cpythonroot_base6.40.4root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.7.2python3.11.____cpythonroot_base6.40.4root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.12.____cpythonroot_base6.36.14root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.2python3.12.____cpythonroot_base6.36.14root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.12.____cpythonroot_base6.38.6root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.2python3.12.____cpythonroot_base6.38.6root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.12.____cpythonroot_base6.38.6root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.7.2python3.12.____cpythonroot_base6.38.6root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.12.____cpythonroot_base6.40.4root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.2python3.12.____cpythonroot_base6.40.4root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.12.____cpythonroot_base6.40.4root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.7.2python3.12.____cpythonroot_base6.40.4root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.13.____cp313root_base6.36.14root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.2python3.13.____cp313root_base6.36.14root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.13.____cp313root_base6.38.6root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.2python3.13.____cp313root_base6.38.6root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.13.____cp313root_base6.38.6root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.7.2python3.13.____cp313root_base6.38.6root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.13.____cp313root_base6.40.4root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.2python3.13.____cp313root_base6.40.4root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.13.____cp313root_base6.40.4root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.7.2python3.13.____cp313root_base6.40.4root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.14.____cp314root_base6.36.14root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.2python3.14.____cp314root_base6.36.14root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.14.____cp314root_base6.38.6root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.2python3.14.____cp314root_base6.38.6root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.14.____cp314root_base6.38.6root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.7.2python3.14.____cp314root_base6.38.6root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.14.____cp314root_base6.40.4root_cxx_standard20:
+        CONFIG: osx_64_clhep2.4.7.2python3.14.____cp314root_base6.40.4root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_clhep2.4.7.2python3.14.____cp314root_base6.40.4root_cxx_standard23:
+        CONFIG: osx_64_clhep2.4.7.2python3.14.____cp314root_base6.40.4root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.4.0python3.11.____cpythonroot_base6.36.14root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.11.____cpythonroot_base6.36.14root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -268,8 +618,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.10.____cpythonroot_base6.38.4root_cxx_standard20:
-        CONFIG: osx_arm64_python3.10.____cpythonroot_base6.38.4root_cxx_standard20
+      osx_arm64_clhep2.4.4.0python3.11.____cpythonroot_base6.38.6root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.11.____cpythonroot_base6.38.6root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -278,8 +628,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.10.____cpythonroot_base6.38.4root_cxx_standard23:
-        CONFIG: osx_arm64_python3.10.____cpythonroot_base6.38.4root_cxx_standard23
+      osx_arm64_clhep2.4.4.0python3.11.____cpythonroot_base6.38.6root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.11.____cpythonroot_base6.38.6root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -288,8 +638,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.10.____cpythonroot_base6.40.2root_cxx_standard20:
-        CONFIG: osx_arm64_python3.10.____cpythonroot_base6.40.2root_cxx_standard20
+      osx_arm64_clhep2.4.4.0python3.11.____cpythonroot_base6.40.4root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.11.____cpythonroot_base6.40.4root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -298,8 +648,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.10.____cpythonroot_base6.40.2root_cxx_standard23:
-        CONFIG: osx_arm64_python3.10.____cpythonroot_base6.40.2root_cxx_standard23
+      osx_arm64_clhep2.4.4.0python3.11.____cpythonroot_base6.40.4root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.11.____cpythonroot_base6.40.4root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -308,8 +658,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.11.____cpythonroot_base6.36.10root_cxx_standard20:
-        CONFIG: osx_arm64_python3.11.____cpythonroot_base6.36.10root_cxx_standard20
+      osx_arm64_clhep2.4.4.0python3.12.____cpythonroot_base6.36.14root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.12.____cpythonroot_base6.36.14root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -318,8 +668,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.11.____cpythonroot_base6.38.4root_cxx_standard20:
-        CONFIG: osx_arm64_python3.11.____cpythonroot_base6.38.4root_cxx_standard20
+      osx_arm64_clhep2.4.4.0python3.12.____cpythonroot_base6.38.6root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.12.____cpythonroot_base6.38.6root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -328,8 +678,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.11.____cpythonroot_base6.38.4root_cxx_standard23:
-        CONFIG: osx_arm64_python3.11.____cpythonroot_base6.38.4root_cxx_standard23
+      osx_arm64_clhep2.4.4.0python3.12.____cpythonroot_base6.38.6root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.12.____cpythonroot_base6.38.6root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -338,8 +688,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.11.____cpythonroot_base6.40.2root_cxx_standard20:
-        CONFIG: osx_arm64_python3.11.____cpythonroot_base6.40.2root_cxx_standard20
+      osx_arm64_clhep2.4.4.0python3.12.____cpythonroot_base6.40.4root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.12.____cpythonroot_base6.40.4root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -348,8 +698,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.11.____cpythonroot_base6.40.2root_cxx_standard23:
-        CONFIG: osx_arm64_python3.11.____cpythonroot_base6.40.2root_cxx_standard23
+      osx_arm64_clhep2.4.4.0python3.12.____cpythonroot_base6.40.4root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.12.____cpythonroot_base6.40.4root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -358,8 +708,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.12.____cpythonroot_base6.36.10root_cxx_standard20:
-        CONFIG: osx_arm64_python3.12.____cpythonroot_base6.36.10root_cxx_standard20
+      osx_arm64_clhep2.4.4.0python3.13.____cp313root_base6.36.14root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.13.____cp313root_base6.36.14root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -368,8 +718,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.12.____cpythonroot_base6.38.4root_cxx_standard20:
-        CONFIG: osx_arm64_python3.12.____cpythonroot_base6.38.4root_cxx_standard20
+      osx_arm64_clhep2.4.4.0python3.13.____cp313root_base6.38.6root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.13.____cp313root_base6.38.6root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -378,8 +728,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.12.____cpythonroot_base6.38.4root_cxx_standard23:
-        CONFIG: osx_arm64_python3.12.____cpythonroot_base6.38.4root_cxx_standard23
+      osx_arm64_clhep2.4.4.0python3.13.____cp313root_base6.38.6root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.13.____cp313root_base6.38.6root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -388,8 +738,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.12.____cpythonroot_base6.40.2root_cxx_standard20:
-        CONFIG: osx_arm64_python3.12.____cpythonroot_base6.40.2root_cxx_standard20
+      osx_arm64_clhep2.4.4.0python3.13.____cp313root_base6.40.4root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.13.____cp313root_base6.40.4root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -398,8 +748,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.12.____cpythonroot_base6.40.2root_cxx_standard23:
-        CONFIG: osx_arm64_python3.12.____cpythonroot_base6.40.2root_cxx_standard23
+      osx_arm64_clhep2.4.4.0python3.13.____cp313root_base6.40.4root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.13.____cp313root_base6.40.4root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -408,8 +758,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.13.____cp313root_base6.36.10root_cxx_standard20:
-        CONFIG: osx_arm64_python3.13.____cp313root_base6.36.10root_cxx_standard20
+      osx_arm64_clhep2.4.4.0python3.14.____cp314root_base6.36.14root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.14.____cp314root_base6.36.14root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -418,8 +768,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.13.____cp313root_base6.38.4root_cxx_standard20:
-        CONFIG: osx_arm64_python3.13.____cp313root_base6.38.4root_cxx_standard20
+      osx_arm64_clhep2.4.4.0python3.14.____cp314root_base6.38.6root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.14.____cp314root_base6.38.6root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -428,8 +778,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.13.____cp313root_base6.38.4root_cxx_standard23:
-        CONFIG: osx_arm64_python3.13.____cp313root_base6.38.4root_cxx_standard23
+      osx_arm64_clhep2.4.4.0python3.14.____cp314root_base6.38.6root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.14.____cp314root_base6.38.6root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -438,8 +788,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.13.____cp313root_base6.40.2root_cxx_standard20:
-        CONFIG: osx_arm64_python3.13.____cp313root_base6.40.2root_cxx_standard20
+      osx_arm64_clhep2.4.4.0python3.14.____cp314root_base6.40.4root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.14.____cp314root_base6.40.4root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -448,8 +798,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.13.____cp313root_base6.40.2root_cxx_standard23:
-        CONFIG: osx_arm64_python3.13.____cp313root_base6.40.2root_cxx_standard23
+      osx_arm64_clhep2.4.4.0python3.14.____cp314root_base6.40.4root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.4.0python3.14.____cp314root_base6.40.4root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -458,8 +808,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.14.____cp314root_base6.36.10root_cxx_standard20:
-        CONFIG: osx_arm64_python3.14.____cp314root_base6.36.10root_cxx_standard20
+      osx_arm64_clhep2.4.7.1python3.11.____cpythonroot_base6.36.14root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.11.____cpythonroot_base6.36.14root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -468,8 +818,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.14.____cp314root_base6.38.4root_cxx_standard20:
-        CONFIG: osx_arm64_python3.14.____cp314root_base6.38.4root_cxx_standard20
+      osx_arm64_clhep2.4.7.1python3.11.____cpythonroot_base6.38.6root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.11.____cpythonroot_base6.38.6root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -478,8 +828,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.14.____cp314root_base6.38.4root_cxx_standard23:
-        CONFIG: osx_arm64_python3.14.____cp314root_base6.38.4root_cxx_standard23
+      osx_arm64_clhep2.4.7.1python3.11.____cpythonroot_base6.38.6root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.11.____cpythonroot_base6.38.6root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -488,8 +838,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.14.____cp314root_base6.40.2root_cxx_standard20:
-        CONFIG: osx_arm64_python3.14.____cp314root_base6.40.2root_cxx_standard20
+      osx_arm64_clhep2.4.7.1python3.11.____cpythonroot_base6.40.4root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.11.____cpythonroot_base6.40.4root_cxx_standard20
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -498,8 +848,8 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
-      osx_arm64_python3.14.____cp314root_base6.40.2root_cxx_standard23:
-        CONFIG: osx_arm64_python3.14.____cp314root_base6.40.2root_cxx_standard23
+      osx_arm64_clhep2.4.7.1python3.11.____cpythonroot_base6.40.4root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.11.____cpythonroot_base6.40.4root_cxx_standard23
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15-arm64
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -508,6 +858,357 @@ jobs:
         resize_partitions: false
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.1python3.12.____cpythonroot_base6.36.14root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.12.____cpythonroot_base6.36.14root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.1python3.12.____cpythonroot_base6.38.6root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.12.____cpythonroot_base6.38.6root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.1python3.12.____cpythonroot_base6.38.6root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.12.____cpythonroot_base6.38.6root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.1python3.12.____cpythonroot_base6.40.4root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.12.____cpythonroot_base6.40.4root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.1python3.12.____cpythonroot_base6.40.4root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.12.____cpythonroot_base6.40.4root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.1python3.13.____cp313root_base6.36.14root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.13.____cp313root_base6.36.14root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.1python3.13.____cp313root_base6.38.6root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.13.____cp313root_base6.38.6root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.1python3.13.____cp313root_base6.38.6root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.13.____cp313root_base6.38.6root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.1python3.13.____cp313root_base6.40.4root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.13.____cp313root_base6.40.4root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.1python3.13.____cp313root_base6.40.4root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.13.____cp313root_base6.40.4root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.1python3.14.____cp314root_base6.36.14root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.14.____cp314root_base6.36.14root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.1python3.14.____cp314root_base6.38.6root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.14.____cp314root_base6.38.6root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.1python3.14.____cp314root_base6.38.6root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.14.____cp314root_base6.38.6root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.1python3.14.____cp314root_base6.40.4root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.14.____cp314root_base6.40.4root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.1python3.14.____cp314root_base6.40.4root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.7.1python3.14.____cp314root_base6.40.4root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.11.____cpythonroot_base6.36.14root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.11.____cpythonroot_base6.36.14root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.11.____cpythonroot_base6.38.6root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.11.____cpythonroot_base6.38.6root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.11.____cpythonroot_base6.38.6root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.11.____cpythonroot_base6.38.6root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.11.____cpythonroot_base6.40.4root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.11.____cpythonroot_base6.40.4root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.11.____cpythonroot_base6.40.4root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.11.____cpythonroot_base6.40.4root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.12.____cpythonroot_base6.36.14root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.12.____cpythonroot_base6.36.14root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.12.____cpythonroot_base6.38.6root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.12.____cpythonroot_base6.38.6root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.12.____cpythonroot_base6.38.6root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.12.____cpythonroot_base6.38.6root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.12.____cpythonroot_base6.40.4root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.12.____cpythonroot_base6.40.4root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.12.____cpythonroot_base6.40.4root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.12.____cpythonroot_base6.40.4root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.13.____cp313root_base6.36.14root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.13.____cp313root_base6.36.14root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.13.____cp313root_base6.38.6root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.13.____cp313root_base6.38.6root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.13.____cp313root_base6.38.6root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.13.____cp313root_base6.38.6root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.13.____cp313root_base6.40.4root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.13.____cp313root_base6.40.4root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.13.____cp313root_base6.40.4root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.13.____cp313root_base6.40.4root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.14.____cp314root_base6.36.14root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.14.____cp314root_base6.36.14root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.14.____cp314root_base6.38.6root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.14.____cp314root_base6.38.6root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.14.____cp314root_base6.38.6root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.14.____cp314root_base6.38.6root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.14.____cp314root_base6.40.4root_cxx_standard20:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.14.____cp314root_base6.40.4root_cxx_standard20
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_arm64_clhep2.4.7.2python3.14.____cp314root_base6.40.4root_cxx_standard23:
+        CONFIG: osx_arm64_clhep2.4.7.2python3.14.____cp314root_base6.40.4root_cxx_standard23
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15-arm64
+        build_workspace_dir: ~/miniforge3/conda-bld
+        free_disk_space: skip
+        pagefile_size: 0
+        resize_partitions: false
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+    maxParallel: 50
   timeoutInMinutes: 360
   variables: {}
 
