@@ -15,8 +15,14 @@ source:
     - 0001-Skip-BDSBH4D-dictionary-when-USE_BOOST-is-off.patch
 
 build:
-  number: 9
-  skip: win
+  number: 10
+  skip:
+    - win
+    # This feedstock has required geant4 >=11.2.2 since it was created. Stating
+    # it here rather than as a version specifier on the host requirement leaves
+    # the geant4 pin to conda-forge-pinning, and drops the 10.7.4 leg of the
+    # zipped clhep/geant4 variant rather than failing it.
+    - match(geant4, "<11.2.2")
   script: ${RECIPE_DIR}/build_bdsim.sh
 
 requirements:
@@ -33,7 +39,10 @@ requirements:
     - xerces-c
     - root_base
     - root_cxx_standard
-    - geant4 >=11.2.2
+    - geant4
+    # Geant4Config.cmake find_dependency()s EXPAT; geant4 itself only pulls in
+    # libexpat, which has no headers.
+    - expat
     - qt-main
     - libzlib
     - hepmc3
