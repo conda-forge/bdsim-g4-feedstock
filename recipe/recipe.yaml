@@ -34,6 +34,9 @@ requirements:
     - root_base
     - root_cxx_standard
     - geant4 >=11.2.2
+    # Geant4Config.cmake find_dependency()s EXPAT; geant4 itself only pulls in
+    # libexpat, which has no headers.
+    - expat
     - qt-main
     - libzlib
     - hepmc3
