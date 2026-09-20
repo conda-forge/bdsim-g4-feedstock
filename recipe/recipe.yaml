@@ -16,7 +16,11 @@ source:
 
 build:
   number: 10
-  skip: win
+  skip:
+    - win
+    # The host requirement below is geant4 >=11.2.2, so the geant4 10.7.4 leg of
+    # the zipped clhep/geant4 variant can never solve.
+    - match(geant4, "<11.2.2")
   script: ${RECIPE_DIR}/build_bdsim.sh
 
 requirements:
