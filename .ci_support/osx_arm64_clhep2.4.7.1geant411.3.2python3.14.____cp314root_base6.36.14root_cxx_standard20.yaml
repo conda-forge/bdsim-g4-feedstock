@@ -20,6 +20,8 @@ expat:
 - '2'
 geant4:
 - 11.3.2
+hdf5:
+- 1.14.6
 hepmc3:
 - '3.3'
 macos_machine:
