@@ -43,6 +43,7 @@ requirements:
     # Geant4Config.cmake find_dependency()s EXPAT; geant4 itself only pulls in
     # libexpat, which has no headers.
     - expat
+    - hdf5
     - qt-main
     - libzlib
     - hepmc3
