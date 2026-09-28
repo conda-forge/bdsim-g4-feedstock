@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: bdsim-g4
-  version: "1.7.8"
+  version: "1.8.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,12 +10,12 @@ package:
 
 source:
   url: https://github.com/bdsim-collaboration/bdsim/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 4c43a8d53f92efcfdf00476c0298dfdb22f32926d5a7f635c8cd545c6bb04fbc
+  sha256: d8d056037629c32ff47d4306a7a210d1c73250336f22c75267ca8ddfe37520fb
   patches:
     - 0001-Skip-BDSBH4D-dictionary-when-USE_BOOST-is-off.patch
 
 build:
-  number: 10
+  number: 0
   skip:
     - win
     # This feedstock has required geant4 >=11.2.2 since it was created. Stating
@@ -43,6 +43,7 @@ requirements:
     # Geant4Config.cmake find_dependency()s EXPAT; geant4 itself only pulls in
     # libexpat, which has no headers.
     - expat
+    - hdf5
     - qt-main
     - libzlib
     - hepmc3
