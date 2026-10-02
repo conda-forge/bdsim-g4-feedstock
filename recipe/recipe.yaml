@@ -15,7 +15,7 @@ source:
     - 0001-Skip-BDSBH4D-dictionary-when-USE_BOOST-is-off.patch
 
 build:
-  number: 0
+  number: 1
   skip:
     - win
     # This feedstock has required geant4 >=11.2.2 since it was created. Stating
