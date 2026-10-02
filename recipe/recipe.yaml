@@ -53,10 +53,10 @@ requirements:
     - python
     - pybind11
     - pybind11-abi
-    - rpyc
-    - pandas
   run:
     - python
+    - rpyc
+    - pandas
 tests:
   - files:
       recipe:
