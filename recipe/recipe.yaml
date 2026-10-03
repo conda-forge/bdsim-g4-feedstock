@@ -28,7 +28,7 @@ build:
     - mkdir -p "${PREFIX}/etc/conda/activate.d"
     - cp "${RECIPE_DIR}/activate.sh" "${PREFIX}/etc/conda/activate.d/${PKG_NAME}_activate.sh"
     - if: osx
-      then : bash "${RECIPE_DIR}/osx_fix_cmake_target.sh"
+      then : ${RECIPE_DIR}/osx_fix_cmake_target.sh
 
 requirements:
   build:
