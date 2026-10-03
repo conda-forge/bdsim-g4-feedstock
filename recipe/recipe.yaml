@@ -15,7 +15,7 @@ source:
     - 0001-Skip-BDSBH4D-dictionary-when-USE_BOOST-is-off.patch
 
 build:
-  number: 1
+  number: 2
   skip:
     - win
     # This feedstock has required geant4 >=11.2.2 since it was created. Stating
@@ -23,7 +23,10 @@ build:
     # the geant4 pin to conda-forge-pinning, and drops the 10.7.4 leg of the
     # zipped clhep/geant4 variant rather than failing it.
     - match(geant4, "<11.2.2")
-  script: ${RECIPE_DIR}/build_bdsim.sh
+  script:
+    - ${RECIPE_DIR}/build_bdsim.sh
+    - mkdir -p "${PREFIX}/etc/conda/activate.d"
+    - cp "${RECIPE_DIR}/activate.sh" "${PREFIX}/etc/conda/activate.d/${PKG_NAME}_activate.sh"
 
 requirements:
   build:
@@ -52,6 +55,8 @@ requirements:
     - pybind11-abi
   run:
     - python
+    - rpyc
+    - pandas
 tests:
   - files:
       recipe:
@@ -59,6 +64,7 @@ tests:
     script:
       - bdsim --help
       - bdsim --file=drift.gmad --batch --ngenerate=100
+      - python -c "import bdsim"
 
 about:
   summary: BDSIM is a code to make 3D models of particle accelerators using Geant4.
