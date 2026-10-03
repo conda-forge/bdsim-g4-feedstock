@@ -27,6 +27,9 @@ build:
     - ${RECIPE_DIR}/build_bdsim.sh
     - mkdir -p "${PREFIX}/etc/conda/activate.d"
     - cp "${RECIPE_DIR}/activate.sh" "${PREFIX}/etc/conda/activate.d/${PKG_NAME}_activate.sh"
+    - if osx :
+    - then:
+      - ${RECIPE_DIR}/osx_fix_cmake_taget.sh
 
 requirements:
   build:
