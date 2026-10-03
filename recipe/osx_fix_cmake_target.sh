@@ -2,8 +2,8 @@ python - <<'PY'
 import os
 from pathlib import Path
 paths = [
-    Path(os.environ["CONDA_PREFIX"]) / "lib/cmake/bdsim/BDSIMTargets.cmake",
-    Path(os.environ["CONDA_PREFIX"]) / "lib/cmake/cfitsio/cfitsioTargets.cmake"
+    Path(os.environ["PREFIX"]) / "lib/cmake/bdsim/BDSIMTargets.cmake",
+    Path(os.environ["PREFIX"]) / "lib/cmake/cfitsio/cfitsioTargets.cmake"
 ]
 
 osversion = os.environ["MACOSX_SDK_VERSION"]
