@@ -15,7 +15,7 @@ source:
     - 0001-Skip-BDSBH4D-dictionary-when-USE_BOOST-is-off.patch
 
 build:
-  number: 2
+  number: 3
   skip:
     - win
     # This feedstock has required geant4 >=11.2.2 since it was created. Stating
@@ -27,6 +27,10 @@ build:
     - ${RECIPE_DIR}/build_bdsim.sh
     - mkdir -p "${PREFIX}/etc/conda/activate.d"
     - cp "${RECIPE_DIR}/activate.sh" "${PREFIX}/etc/conda/activate.d/${PKG_NAME}_activate.sh"
+    - if: osx
+      then :
+        - MACOSX_SDK_VERSION=${{ MACOSX_SDK_VERSION }} bash "${RECIPE_DIR}/osx_fix_cmake_target.sh"
+        - cat "${PREFIX}/lib/cmake/bdsim/BDSIMTargets.cmake"
 
 requirements:
   build:
