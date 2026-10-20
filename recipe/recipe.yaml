@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: bdsim-g4
-  version: "1.8.0"
+  version: "1.8.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,12 +10,12 @@ package:
 
 source:
   url: https://github.com/bdsim-collaboration/bdsim/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: d8d056037629c32ff47d4306a7a210d1c73250336f22c75267ca8ddfe37520fb
-  patches:
-    - 0001-Skip-BDSBH4D-dictionary-when-USE_BOOST-is-off.patch
+  sha256: bce82029046070aeb61b2182aa26ef715eca8037d445f01535d9cb7a9e8298ff
+  #patches:
+  #  - 0001-Skip-BDSBH4D-dictionary-when-USE_BOOST-is-off.patch
 
 build:
-  number: 3
+  number: 0
   skip:
     - win
     # This feedstock has required geant4 >=11.2.2 since it was created. Stating
@@ -28,7 +28,7 @@ build:
     - mkdir -p "${PREFIX}/etc/conda/activate.d"
     - cp "${RECIPE_DIR}/activate.sh" "${PREFIX}/etc/conda/activate.d/${PKG_NAME}_activate.sh"
     - if: osx
-      then :
+      then:
         - MACOSX_SDK_VERSION=${{ MACOSX_SDK_VERSION }} bash "${RECIPE_DIR}/osx_fix_cmake_target.sh"
         - cat "${PREFIX}/lib/cmake/bdsim/BDSIMTargets.cmake"
 
