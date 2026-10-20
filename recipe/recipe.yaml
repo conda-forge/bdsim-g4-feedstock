@@ -11,8 +11,8 @@ package:
 source:
   url: https://github.com/bdsim-collaboration/bdsim/archive/refs/tags/v${{ version }}.tar.gz
   sha256: bce82029046070aeb61b2182aa26ef715eca8037d445f01535d9cb7a9e8298ff
-  patches:
-    - 0001-Skip-BDSBH4D-dictionary-when-USE_BOOST-is-off.patch
+  #patches:
+  #  - 0001-Skip-BDSBH4D-dictionary-when-USE_BOOST-is-off.patch
 
 build:
   number: 0
