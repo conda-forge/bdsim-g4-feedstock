@@ -58,6 +58,7 @@ requirements:
     - pybind11
     - pybind11-abi
   run:
+    - qt6-main
     - python
     - rpyc
     - pandas
