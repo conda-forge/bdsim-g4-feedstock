@@ -61,6 +61,8 @@ requirements:
     - python
     - rpyc
     - pandas
+    - geant4
+
 tests:
   - files:
       recipe:
