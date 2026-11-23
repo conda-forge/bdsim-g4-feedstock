@@ -61,7 +61,7 @@ requirements:
     - python
     - rpyc
     - pandas
-    - geant4
+    - geant4 * qt_*
 
 tests:
   - files:
