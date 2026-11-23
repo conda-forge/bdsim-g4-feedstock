@@ -46,7 +46,7 @@ requirements:
     - xerces-c
     - root_base
     - root_cxx_standard
-    - geant4 * qt_ *
+    - geant4 * qt_*
     # Geant4Config.cmake find_dependency()s EXPAT; geant4 itself only pulls in
     # libexpat, which has no headers.
     - expat
