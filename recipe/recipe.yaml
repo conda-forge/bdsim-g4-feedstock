@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: bdsim-g4
-  version: "1.8.1"
+  version: "1.8.2"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/bdsim-collaboration/bdsim/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: bce82029046070aeb61b2182aa26ef715eca8037d445f01535d9cb7a9e8298ff
+  sha256: 9768cec847e1e96ea046e0108b25f76d7da9185a877c1a61d1981031ca5cb90d
   #patches:
   #  - 0001-Skip-BDSBH4D-dictionary-when-USE_BOOST-is-off.patch
 
